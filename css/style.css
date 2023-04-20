@@ -73,6 +73,16 @@ header, section {
     width: 20px;
 }
 
+@media (max-width: 576px) {
+    .footmenu {
+        margin-top: 5rem;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+    }  
+}
 
 /* ####################################                          Index page                          #################################### */
 
@@ -207,8 +217,9 @@ header, section {
 
 /* ####################################                          Contact page                          #################################### */
 
-.contact {
+ .contact {
     list-style-type: none;
+    margin-top: 2rem;
 }
 
 .contact-item {
@@ -221,6 +232,9 @@ header, section {
     width: 20px;
 }
 
+.contact form {
+    margin-bottom: 2rem;
+}
 
 /* ####################################                          Form page                          #################################### */
 
