@@ -7,29 +7,34 @@
     <title>Servicios</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="shortcut icon" href="../images/favicon.png">
 </head>
 <body>
-    <header>
-        <section class="header">
-            <img src="../images/logo3.png" alt="brujula" class="header-logo">
-            <nav>
-                <ul class="nav nav-pills">
-                    <li class="nav-item"><a class="nav-link link-success" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link link-success" href="../pages/who.html">¿Quién soy?</a></li>
-                    <li class="nav-item"><a class="nav-link link-success active bg-success" aria-current="page" href="#">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link link-success" href="../pages/events.html">Proximos eventos</a></li>
-                    <li class="nav-item"><a class="nav-link link-success" href="../pages/contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section>
-            <h1>Servicios</h1>
-        </section>                   <!-- ##################### Ponerle media query ############################-->
+    <header class="container">
+        <nav class="navbar navbar-expand-lg border-bottom border-success">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../images/logo3.png" alt="brujula" class="header-logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav nav-pills">
+                        <li class="nav-item"><a class="ps-1 nav-link link-success" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="ps-1 nav-link link-success" href="../pages/who.html">¿Quién soy?</a></li>
+                        <li class="nav-item"><a class="ps-2 nav-link link-success active bg-success text-white" aria-current="page" href="#">Servicios</a></li>
+                        <li class="nav-item"><a class="ps-1 nav-link link-success" href="../pages/events.html">Proximos eventos</a></li>
+                        <li class="nav-item"><a class="ps-1 nav-link link-success" href="../pages/contact.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>    
     </header>
     <main>
-        <section>
-            <div class="services">
+        <section class="container">
+            <h1>Servicios</h1>
+        </section>                   <!-- ##################### Ponerle media query ############################-->
+        <section class="services">
+            <div class="services-cards">
                 <div class="services-card">
                     <img src="../images/individual.png" alt="reunion individual">
                     <h3>Reunion individual</h3>
