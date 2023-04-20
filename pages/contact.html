@@ -33,20 +33,24 @@
         <section>
             <h1>Contacto</h1>
         </section>
-        <form class="form">
-                <div><label for="nombre">Nombre</label></div>
-                <input type="text" required size="50">
-
-                <div><label for="mail">Mail</label></div>
-                <input type="mail" required size="50">
-
-                <div>Asunto</div>
-                <input type="text" required size="50">
-
-                <div>Mensaje</div>
-                <textarea name="" id="" cols="50" rows="10"></textarea>
-                
-                <div><input type="submit" value="Enviar" class="form-button bg-success border-success rounded"></div>             
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+            </div>
+            <div class="mb-3">
+                <label for="subject" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="subject">
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary bg-success border-success">Enviar</button>
         </form>
         <ul class="contact">
             <li class="contact-item"><img class="contact-logo" src="../images/iglogo.png" alt="instagram link"><a href="https://www.instagram.com/_matiasmerlo/">Instagram</a></li>
