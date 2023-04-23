@@ -30,36 +30,38 @@
         </nav>    
     </header>
     <main class="container contact">
-        <section>
-            <h1>Contacto</h1>
-        </section>
-        <section>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="name">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
-                </div>
-                <div class="mb-3">
-                    <label for="subject" class="form-label">Asunto</label>
-                    <input type="text" class="form-control" id="subject">
-                </div>
-                <div class="mb-3">
-                    <label for="mensaje" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="mensaje" rows="10"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary bg-success border-success">Enviar</button>
-            </form>
-            <h1>Buscame en las redes</h1>
-            <ul class="contact">
-                <li class="contact-item"><img class="contact-logo" src="../images/iglogo.png" alt="instagram link"><a href="https://www.instagram.com/_matiasmerlo/">Instagram</a></li>
-                <li class="contact-item"><img class="contact-logo" src="../images/fblogo.png" alt="facebook link"><a href="https://www.facebook.com/matias.merlo.85/">Facebook</a></li>
-                <li class="contact-item"><img class="contact-logo" src="../images/linkedinlogo.png" alt="linkedin link"><a href="https://www.linkedin.com/in/matiasmerlo/">LinkedIn</a></li>
-            </ul>
-        </section>
+        <div class="contact-grid">
+            <section class="contact-grid-social">
+                <h1>Buscame en las redes</h1>
+                <ul class="social">
+                    <li class="social-item"><img class="social-logo" src="../images/iglogo.png" alt="instagram link"><a href="https://www.instagram.com/_matiasmerlo/">Instagram</a></li>
+                    <li class="social-item"><img class="social-logo" src="../images/fblogo.png" alt="facebook link"><a href="https://www.facebook.com/matias.merlo.85/">Facebook</a></li>
+                    <li class="social-item"><img class="social-logo" src="../images/linkedinlogo.png" alt="linkedin link"><a href="https://www.linkedin.com/in/matiasmerlo/">LinkedIn</a></li>
+                </ul>
+            </section>
+            <section class="contact-grid-form">
+                <h1>Contacto</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Asunto</label>
+                        <input type="text" class="form-control" id="subject">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="10"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary bg-success border-success">Enviar</button>
+                </form>
+            </section>
+        </div>
     </main>
     <footer>
         <ul class="footmenu">
