@@ -8,20 +8,18 @@
     box-sizing: border-box;
     font-family: 'Montserrat';
     color: #22577A;
+}
+
+body {
+    padding-bottom: 2rem;
+    background-image: linear-gradient(0deg,rgba(199,249,204,0.5),rgba(199,249,204,0.5)), url(../images/viajero-ruta.jpg);
+    background-position: top right;
+    background-size: auto;
 }    
 
 ::selection {
     color: white;
     background: #22577A;
-}
-
-body {
-    padding-bottom: 2rem;
-    background-color: #C7F9CC;
-    background-image: url(../images/mapat.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: cover;
 }    
 
 header, section {
@@ -36,6 +34,23 @@ header, section {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: #22577A;
+}
+a:hover {
+    text-decoration: underline;
+    color: #22577A;
+}
+
+.navbar-nav a {
+    color: #22577A;
+}
+
+.bg-success {
+    background-color: #38A3A5 !important;
+}
+
 /* ####################################                          Top Menu                          #################################### */
 
 .header-logo {
@@ -43,6 +58,9 @@ header, section {
     width: 75px;
 }    
 
+.nav-item a:hover {
+    text-decoration: underline;
+}
 /*.header {
     display: flex;
     justify-content: space-between;
@@ -95,41 +113,6 @@ header, section {
 
 /* ####################################                          Index page                          #################################### */
 
-.index-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    background-image: url(../images/ruta_transp.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: cover;
-  }  
-
-.index-item-title {
-    grid-column: 1;
-    grid-row: 1;
-    z-index: 1;
-}
-
-.index-item-find {
-    grid-column: 1;
-    grid-row: 2;
-    z-index: 1;
-    justify-self: start;
-}
-
-.index-item-for {
-    grid-column: 1;
-    grid-row: 3;
-}
-
-.index-item-img {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 3;
-    z-index: 0;
-    justify-self: end;
-    width: 75%;
-  }
 
 /* ####################################                          Who page                          #################################### */
 
@@ -154,7 +137,6 @@ header, section {
 }
 
 /* ####################################                          Services page                          #################################### */
-/* ponerle media query*/
 
 .services {
     display: flex;
@@ -162,6 +144,7 @@ header, section {
     align-items: center;
     text-align: justify;
     flex: 1;
+    margin: 2rem;
 }
 
 .services-cards {
@@ -171,7 +154,16 @@ header, section {
     max-width: 1000px;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 1199px) {
+    .services-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        max-width: 800px;
+    }        
+}
+
+@media (max-width: 991px) {
     .services-cards {
         display: flex;
         flex-direction: column;
@@ -183,9 +175,7 @@ header, section {
 
 .services-card {
     padding: 0.5rem;
-    background-color: rgb(128, 237, 153, 0.3);
-    display: flex;
-    flex-direction: column;
+    background-color: rgb(128, 237, 153, 0.4);
     justify-content: center;
     align-items: center;
     text-align: justify;
@@ -203,9 +193,10 @@ header, section {
     width: 100%;
 }        
 
-.services-card img:active {
-    width: 80%;
-}
+.services-card:active h3,
+.services-card:active p {
+    color: black;
+}    
 
 /* ####################################                          Events page                          #################################### */
 
