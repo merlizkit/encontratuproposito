@@ -6,13 +6,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat';
+    font-family: bold,'Montserrat';
     color: #22577A;
+/*     background-color: rgba(199, 249, 204,0.2);
+     text-shadow: 0 0 3px #C7F9CC, 0 0 5px #C7F9CC; */
 }
 
 body {
     padding-bottom: 2rem;
-    background-image: linear-gradient(0deg,rgba(199,249,204,0.5),rgba(199,249,204,0.5)), url(../images/vista-frontal-viajero-carretera.jpg);
+    background-image: linear-gradient(0deg,rgba(199,249,204,0.7),rgba(199,249,204,0.9)), url(../images/vista-frontal-viajero-carretera.jpg);
     background-position: top right;
     background-size: cover;
     background-attachment: fixed;
@@ -121,6 +123,21 @@ a:hover {
 
 /* ####################################                          Index page                          #################################### */
 
+@media (min-width: 1400px) {
+    .carousel {
+        width: 50%;
+    }
+}
+@media (min-width: 990px) and (max-width: 1399px) {
+    .carousel {
+        width: 60%;
+    }
+}
+@media (min-width: 768px) and (max-width: 989px) {
+    .carousel {
+        width: 80%;
+    }
+}
 
 /* ####################################                          Who page                          #################################### */
 
