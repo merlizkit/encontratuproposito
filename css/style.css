@@ -15,6 +15,7 @@ body {
     background-image: linear-gradient(0deg,rgba(199,249,204,0.5),rgba(199,249,204,0.5)), url(../images/vista-frontal-viajero-carretera.jpg);
     background-position: top right;
     background-size: cover;
+    background-attachment: fixed;
 }    
 
 ::selection {
@@ -107,6 +108,7 @@ a:hover {
         margin-top: 5rem;
         list-style-type: none;
         display: grid;
+        justify-items: center;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 1rem;
