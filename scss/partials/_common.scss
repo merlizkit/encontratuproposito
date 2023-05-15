@@ -8,16 +8,16 @@ body {
 
 ::selection {
     color: white;
-    background: #22577A;
+    background: $textcolor;
 }   
 
 a {
     text-decoration: none;
-    color: #22577A;
+    color: $textcolor;
     
     &:hover {
         text-decoration: underline;
-        color: #22577A;
+        color: $textcolor;
     }
 }
 
@@ -36,7 +36,3 @@ p {
 header, section {
     margin-bottom: 2rem;
 }    
-
-em {
-    font-style: bold;
-}

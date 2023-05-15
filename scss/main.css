@@ -7,8 +7,6 @@
   box-sizing: border-box;
   font-family: bold, "Montserrat";
   color: #22577A;
-  /*     background-color: rgba(199, 249, 204,0.2);
-       text-shadow: 0 0 3px #C7F9CC, 0 0 5px #C7F9CC; */
 }
 
 body {
@@ -54,10 +52,6 @@ header, section {
   margin-bottom: 2rem;
 }
 
-em {
-  font-style: bold;
-}
-
 .header-logo {
   margin-right: 1rem;
   width: 75px;
@@ -71,56 +65,20 @@ em {
   color: #22577A;
 }
 
-.footmenu {
-  padding-left: 0;
-  margin-top: 5rem;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.footcontact {
-  padding-left: 0;
-  margin-top: 2rem;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-.footcontact img {
-  width: 20px;
-}
-
-@media (max-width: 576px) {
-  .footmenu {
-    margin-top: 5rem;
-    list-style-type: none;
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-  }
-}
-.freepik {
-  margin-top: 2rem;
-}
-
 /* ####################################                          Index page                          #################################### */
-@media (min-width: 1400px) {
+@media (min-width: 768px) {
   .carousel {
-    width: 50%;
+    width: 80%;
   }
 }
-@media (min-width: 990px) and (max-width: 1399px) {
+@media (min-width: 990px) {
   .carousel {
     width: 60%;
   }
 }
-@media (min-width: 768px) and (max-width: 989px) {
+@media (min-width: 1400px) {
   .carousel {
-    width: 80%;
+    width: 50%;
   }
 }
 /* ####################################                          Who page                          #################################### */
@@ -142,6 +100,7 @@ em {
 }
 .images-grid {
   width: 100%;
+  animation: tilt-in-fwd-tr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /* ####################################                          Services page                          #################################### */
@@ -165,6 +124,9 @@ em {
   align-items: center;
   text-align: justify;
   flex: 1;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .services-card img {
   width: 100%;
@@ -275,4 +237,64 @@ em {
 .social-logo {
   margin-right: 1rem;
   width: 20px;
+}
+
+.footmenu {
+  padding-left: 0;
+  margin-top: 5rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footcontact {
+  padding-left: 0;
+  margin-top: 2rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.footcontact img {
+  width: 20px;
+}
+
+@media (max-width: 576px) {
+  .footmenu {
+    margin-top: 5rem;
+    list-style-type: none;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+.freepik {
+  margin-top: 2rem;
+}
+
+/* ####################################                          Animations                          #################################### */
+/* Tilt in Fwd */
+@keyframes tilt-in-fwd-tr {
+  0% {
+    transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+/* flip-in horizontal bottom */
+@keyframes flip-in-hor-bottom {
+  0% {
+    transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=main.css.map */
