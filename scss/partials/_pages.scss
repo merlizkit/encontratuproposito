@@ -1,0 +1,199 @@
+/* ####################################                          Index page                          #################################### */
+
+@media (min-width: 1400px) {
+    .carousel {
+        width: 50%;
+    }
+}
+@media (min-width: 990px) and (max-width: 1399px) {
+    .carousel {
+        width: 60%;
+    }
+}
+@media (min-width: 768px) and (max-width: 989px) {
+    .carousel {
+        width: 80%;
+    }
+}
+
+/* ####################################                          Who page                          #################################### */
+
+@media (min-width: 990px) {
+    .who-grid {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "texto imagen"
+        "3 imagen";
+        
+        &-text {
+            align-items: left;
+            grid-area: texto;
+        }
+        
+        &-photo {
+            grid-area: imagen;
+        }
+    }
+}
+
+.images-grid {
+    width: 100%;
+}
+/* ####################################                          Services page                          #################################### */
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 2rem;
+    
+    &-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        max-width: 1200px;
+    }
+
+    &-card {
+        padding: 0.5rem;
+        background-color: rgb(128, 237, 153, 0.4);
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        flex: 1;
+        
+        & img {
+            width: 100%;
+        }        
+        
+        &:hover {
+            background-color: rgb(0, 128, 0, 0.3);
+            
+            & h3,
+            & p {
+                color: white;
+            }        
+        }        
+        
+        &:active h3,
+        &:active p {
+            color: black;
+        }    
+    }        
+}
+
+@media (max-width: 1399px) {
+    .services-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        max-width: 1000px;
+    }        
+}
+
+@media (max-width: 1199px) {
+    .services-cards {
+        display: inline;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        max-width: 600px;
+    }        
+}
+
+@media (max-width: 991px) {
+    .services-cards {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        max-width: 500px;
+    }
+}
+
+/* ####################################                          Events page                          #################################### */
+
+.events-monthly {
+    width: 100%;
+    height: 600px;
+}
+
+@media (min-width: 769px) {
+    .events-agenda {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .events-monthly {
+        display: none;
+    }
+    .events-agenda {
+    width: 100%;
+    height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .events-monthly {
+        display: none;
+    }
+    .events-agenda {
+    width: 100%;
+    height: 400px;
+    }
+}
+
+/* ####################################                          Contact page                          #################################### */
+
+@media (min-width: 769px) {
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 20px;
+        
+        &-form {
+            grid-column: 1;
+            grid-row: 1;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        
+        &-form {
+            grid-row: 1;
+        }
+    }
+}
+
+/* Contact form */
+.contact form {
+    max-width: 500px;
+}
+
+/* Social media */
+.social {
+    list-style-type: none;
+    margin-top: 2rem;
+    
+    &-item {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    &-logo {
+        margin-right: 1rem;
+        width: 20px;
+    }
+}

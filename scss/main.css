@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Poppins:ital,wght@0,100;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Montserrat&family=Poppins:ital,wght@0,100;1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: bold, "Montserrat";
+  color: #22577A;
+  /*     background-color: rgba(199, 249, 204,0.2);
+       text-shadow: 0 0 3px #C7F9CC, 0 0 5px #C7F9CC; */
+}
+
+body {
+  padding-bottom: 2rem;
+  background-image: linear-gradient(0deg, rgba(199, 249, 204, 0.7), rgba(199, 249, 204, 0.9)), url(../images/vista-frontal-viajero-carretera.jpg);
+  background-position: top right;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+::-moz-selection {
+  color: white;
+  background: #22577A;
+}
+
+::selection {
+  color: white;
+  background: #22577A;
+}
+
+a {
+  text-decoration: none;
+  color: #22577A;
+}
+a:hover {
+  text-decoration: underline;
+  color: #22577A;
+}
+
+p {
+  text-align: justify;
+}
+
+.bg-success {
+  background-color: #38A3A5 !important;
+}
+
+.images {
+  width: 50%;
+}
+
+header, section {
+  margin-bottom: 2rem;
+}
+
+em {
+  font-style: bold;
+}
+
+.header-logo {
+  margin-right: 1rem;
+  width: 75px;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
+.navbar-nav a {
+  color: #22577A;
+}
+
+.footmenu {
+  padding-left: 0;
+  margin-top: 5rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footcontact {
+  padding-left: 0;
+  margin-top: 2rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.footcontact img {
+  width: 20px;
+}
+
+@media (max-width: 576px) {
+  .footmenu {
+    margin-top: 5rem;
+    list-style-type: none;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+.freepik {
+  margin-top: 2rem;
+}
+
+/* ####################################                          Index page                          #################################### */
+@media (min-width: 1400px) {
+  .carousel {
+    width: 50%;
+  }
+}
+@media (min-width: 990px) and (max-width: 1399px) {
+  .carousel {
+    width: 60%;
+  }
+}
+@media (min-width: 768px) and (max-width: 989px) {
+  .carousel {
+    width: 80%;
+  }
+}
+/* ####################################                          Who page                          #################################### */
+@media (min-width: 990px) {
+  .who-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "texto imagen" "3 imagen";
+  }
+  .who-grid-text {
+    align-items: left;
+    grid-area: texto;
+  }
+  .who-grid-photo {
+    grid-area: imagen;
+  }
+}
+.images-grid {
+  width: 100%;
+}
+
+/* ####################################                          Services page                          #################################### */
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin: 2rem;
+}
+.services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 1200px;
+}
+.services-card {
+  padding: 0.5rem;
+  background-color: rgba(128, 237, 153, 0.4);
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  flex: 1;
+}
+.services-card img {
+  width: 100%;
+}
+.services-card:hover {
+  background-color: rgba(0, 128, 0, 0.3);
+}
+.services-card:hover h3, .services-card:hover p {
+  color: white;
+}
+.services-card:active h3, .services-card:active p {
+  color: black;
+}
+
+@media (max-width: 1399px) {
+  .services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1199px) {
+  .services-cards {
+    display: inline;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-width: 600px;
+  }
+}
+@media (max-width: 991px) {
+  .services-cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-width: 500px;
+  }
+}
+/* ####################################                          Events page                          #################################### */
+.events-monthly {
+  width: 100%;
+  height: 600px;
+}
+
+@media (min-width: 769px) {
+  .events-agenda {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .events-monthly {
+    display: none;
+  }
+  .events-agenda {
+    width: 100%;
+    height: 400px;
+  }
+}
+@media (max-width: 576px) {
+  .events-monthly {
+    display: none;
+  }
+  .events-agenda {
+    width: 100%;
+    height: 400px;
+  }
+}
+/* ####################################                          Contact page                          #################################### */
+@media (min-width: 769px) {
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+  }
+  .contact-grid-form {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+@media (max-width: 768px) {
+  .contact-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+  .contact-grid-form {
+    grid-row: 1;
+  }
+}
+/* Contact form */
+.contact form {
+  max-width: 500px;
+}
+
+/* Social media */
+.social {
+  list-style-type: none;
+  margin-top: 2rem;
+}
+.social-item {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.social-logo {
+  margin-right: 1rem;
+  width: 20px;
+}/*# sourceMappingURL=main.css.map */

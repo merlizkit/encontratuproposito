@@ -1,0 +1,42 @@
+body {
+    padding-bottom: 2rem;
+    background-image: linear-gradient(0deg,rgba(199,249,204,0.7),rgba(199,249,204,0.9)), url(../images/vista-frontal-viajero-carretera.jpg);
+    background-position: top right;
+    background-size: cover;
+    background-attachment: fixed;
+}    
+
+::selection {
+    color: white;
+    background: #22577A;
+}   
+
+a {
+    text-decoration: none;
+    color: #22577A;
+    
+    &:hover {
+        text-decoration: underline;
+        color: #22577A;
+    }
+}
+
+p {
+    text-align: justify;
+  }
+
+.bg-success {
+    background-color: #38A3A5 !important;
+}
+
+.images {
+    width: 50%;
+}    
+
+header, section {
+    margin-bottom: 2rem;
+}    
+
+em {
+    font-style: bold;
+}
