@@ -16,6 +16,14 @@
     }
 }
 
+.testimony {
+    &-polaroid {
+        &-signature {
+            font-family: 'Great Vibes', cursive;
+        }
+    }
+}
+
 /* ####################################                          Who page                          #################################### */
 
 @media (min-width: 990px) {
@@ -23,10 +31,8 @@
         display: grid;
         gap: 2rem;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
         grid-template-areas: 
-        "texto imagen"
-        "3 imagen";
+        "texto imagen";
         
         &-text {
             align-items: left;
@@ -59,7 +65,7 @@
     }
     
     &-card {
-        padding: 0.5rem;
+        padding: 1rem;
         background-color: rgb(128, 237, 153, 0.4);
         @include position;
         flex: 1;

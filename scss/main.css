@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Poppins:ital,wght@0,100;1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Montserrat&family=Poppins:ital,wght@0,100;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -81,14 +82,17 @@ header, section {
     width: 50%;
   }
 }
+.testimony-polaroid-signature {
+  font-family: "Great Vibes", cursive;
+}
+
 /* ####################################                          Who page                          #################################### */
 @media (min-width: 990px) {
   .who-grid {
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "texto imagen" "3 imagen";
+    grid-template-areas: "texto imagen";
   }
   .who-grid-text {
     align-items: left;
@@ -118,7 +122,7 @@ header, section {
   max-width: 1200px;
 }
 .services-card {
-  padding: 0.5rem;
+  padding: 1rem;
   background-color: rgba(128, 237, 153, 0.4);
   justify-content: center;
   align-items: center;
