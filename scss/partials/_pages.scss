@@ -158,6 +158,10 @@
     }
 }
 
+iframe {
+    filter: hue-rotate(255deg) drop-shadow(2px 4px 6px black);
+  }
+
 /* ####################################                          Contact page                          #################################### */
 
 @media (min-width: 769px) {
